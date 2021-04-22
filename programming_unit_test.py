@@ -1,5 +1,9 @@
 class UnitTest():
     
+    def assert_positive_non_zero_k(k):
+        
+        assert k > 0, 'The number of elements in array (k) must be greater than 0'
+    
     def assert_positive_non_zero_n(n):
         
         assert n > 0, 'n must be greater than 0'
