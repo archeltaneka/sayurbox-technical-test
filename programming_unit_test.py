@@ -1,19 +1,28 @@
 class UnitTest():
     
     def assert_positive_non_zero_k(k):
-        
-        assert k > 0, 'The number of elements in array (k) must be greater than 0'
+        """
+        Assert k (length of the input array) is a positive integer
+        """
+        assert k >= 0, 'The number of elements in array (k) must be greater than 0'
     
     def assert_positive_non_zero_n(n):
-        
-        assert n > 0, 'n must be greater than 0'
-    
-    def case_1(arr, n):
-        
-        assert len(arr) >= n, 'The number of input array must be greater than or equal to n'
-        
-    def case_2(arr, n):
-        
+        """
+        Assert n (most frequent numbers to show) is a positive integer
+        """
+        assert n >= 0, 'n must be greater than 0'
+          
+    def assert_unique_numbers_and_n(arr, n):
+        """
+        Assert length of the unique numbers in the input array is greater than n
+
+        Failed test case example: 
+        k = 5
+        arr = [3,3,2,2,1]
+        n = 4
+
+        The example above will raise an error because there are only 3 numbers taken into account while n = 4.
+        """
         unique = []
         for num in arr:
             if num not in unique:

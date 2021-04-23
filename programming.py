@@ -51,7 +51,7 @@ if __name__ == '__main__':
         
     n = int(input("Enter n most frequent numbers to show : "))
     
-    # basic input test case
+    # basic input test case for k and n
     UnitTest.assert_positive_non_zero_k(k)
     UnitTest.assert_positive_non_zero_n(n)
     
@@ -59,9 +59,8 @@ if __name__ == '__main__':
     answer = []
     result = find_n_most_frequent_nums(arr, k, n)
     
-    # test case 1 & 2
-    UnitTest.case_1(arr, n)
-    UnitTest.case_2(arr, n)
+    # assert unique numbers in the input array and requested input n
+    UnitTest.assert_unique_numbers_and_n(arr, n)
     
     # we only care about the number (index 0) the 2nd element is the frequency (index 1)
     for i in range(n):
