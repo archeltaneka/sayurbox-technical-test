@@ -4,13 +4,13 @@ class UnitTest():
         """
         Assert k (length of the input array) is a positive integer
         """
-        assert k >= 0, 'The number of elements in array (k) must be greater than 0'
+        assert k > 0, 'The number of elements in array (k) must be greater than 0'
     
     def assert_positive_non_zero_n(n):
         """
         Assert n (most frequent numbers to show) is a positive integer
         """
-        assert n >= 0, 'n must be greater than 0'
+        assert n > 0, 'n must be greater than 0'
           
     def assert_unique_numbers_and_n(arr, n):
         """
