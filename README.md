@@ -43,3 +43,8 @@ Make sure that you are inside the repository while creating the environment from
 ## Data Science - Take Home Test
 ---
 Open up Jupyter Notebook and open `data-science.ipynb`
+
+
+## Psikotest
+---
+Please find the answers for the Psikotest part under the `./psikotest` directory
